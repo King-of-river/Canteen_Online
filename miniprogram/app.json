@@ -1,5 +1,12 @@
 {
   "pages": [
+    "pages/tab-order/order",
+    "pages/tab-extend/extend",
+    "pages/tab-orders/orders",
+    "pages/tab-my/my",
+    "pages/tab-add/add"
+  ],
+  "pagess": [
     "pages/index/index",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
@@ -20,6 +27,35 @@
     "navigationBarBackgroundColor": "#F6F6F6",
     "navigationBarTitleText": "云开发 QuickStart",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "custom": true,
+    "list": [
+      {
+        "pagePath": "pages/tab-order/order",
+        "text": "点餐",
+        "iconPath": "pages/resource/image/resource/loading.png",
+        "selectedIconPath": "pages/resource/image/resource/loading.png"
+      },
+      {
+        "pagePath": "pages/tab-extend/extend",
+        "text": "扩展",
+        "iconPath": "pages/resource/image/resource/loading.png",
+        "selectedIconPath": "pages/resource/image/resource/loading.png"
+      },
+      {
+        "pagePath": "pages/tab-orders/orders",
+        "text": "订单",
+        "iconPath": "pages/resource/image/resource/loading.png",
+        "selectedIconPath": "pages/resource/image/resource/loading.png"
+      },
+      {
+        "pagePath": "pages/tab-my/my",
+        "text": "我的",
+        "iconPath": "pages/resource/image/resource/loading.png",
+        "selectedIconPath": "pages/resource/image/resource/loading.png"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json",
   "style": "v2"

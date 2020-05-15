@@ -27,11 +27,10 @@ Page({
         count: 1
       },
       success: res => {
-        // 在返回结果中会包含新创建的记录的 _id
-        console.log(res.count,res.openid)
+        // 在返回结果中只会包含新创建的记录的 _id
+        //console.log(res.count,res.openid)undefined
         this.setData({
           counterId: res._id,
-          //openid:res.openid,
           count: 1
         })
         wx.showToast({//显示消息提示框
