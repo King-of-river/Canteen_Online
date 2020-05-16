@@ -1,11 +1,10 @@
-Component({
-  pageLifetimes: {
-    show() {
-      this.getTabBar().setData({
-        selected:2
-      });
-    }
+Page({
+  data: {
+
   },
-  attached:function(){
-  }
+
+  //生命周期函数--监听页面显示
+  onShow() {
+    this.getTabBar().init();
+  },
 })
