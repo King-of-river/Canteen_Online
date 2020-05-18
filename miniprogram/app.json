@@ -1,0 +1,34 @@
+{
+  "tabBar": {
+    "custom": true,
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/tab-order/order"
+      },
+      {
+        "pagePath": "pages/tab-orders/orders"
+      },
+      {
+        "pagePath": "pages/tab-my/my"
+      }
+    ]
+  },
+  "pages": [
+    "pages/tab-order/order",
+    "pages/tab-orders/orders",
+    "pages/tab-my/my"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "usingComponents": {}
+}
