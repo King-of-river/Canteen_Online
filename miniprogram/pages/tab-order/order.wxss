@@ -1,0 +1,5 @@
+.search {
+  border-bottom-style: solid;
+  border-bottom-color: #353535;
+  border-bottom-width: 1px;
+}

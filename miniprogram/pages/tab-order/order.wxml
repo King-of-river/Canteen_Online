@@ -1,1 +1,28 @@
-点餐界面
+<van-search 
+  class="search"
+  value="{{ value }}" 
+  shape="round"
+  label="{{canteen}}"
+  use-left-icon-slot="false"
+  right-icon="search"
+  placeholder="请输入搜索关键词" 
+  bind:search="onSearch"
+>
+</van-search>
+<!-- 商品栏 -->
+<view wx:key="this" wx:for="{{goods}}">
+  <navigator url="../orderConfirm/orderConfirm?id={{item._id}}&name={{item.name}}">
+    <van-card
+      price="{{ item.price }}"
+      desc="{{ item.desc }}"
+      title="{{ item.name }}"
+      thumb="{{ item.imageURL }}"
+    >
+      <view slot="price-top">
+        食堂名称
+      </view>
+    </van-card>
+  </navigator>
+</view>
+
+
