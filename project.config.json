@@ -60,6 +60,13 @@
 					"id": -1,
 					"name": "pages/tab-order/order",
 					"pathName": "pages/tab-order/order",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/orderConfirm/orderConfirm",
+					"pathName": "pages/orderConfirm/orderConfirm",
 					"scene": null
 				}
 			]

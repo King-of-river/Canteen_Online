@@ -11,13 +11,18 @@
 </van-search>
 <!-- 商品栏 -->
 <view wx:key="this" wx:for="{{goods}}">
-<van-card
-  price="{{ item.price }}"
-  desc="{{ item.desc }}"
-  title="{{ item.name }}"
-  thumb="{{ item.imageURL }}"
->
-</van-card>
+  <navigator url="../orderConfirm/orderConfirm?id={{item._id}}&name={{item.name}}">
+    <van-card
+      price="{{ item.price }}"
+      desc="{{ item.desc }}"
+      title="{{ item.name }}"
+      thumb="{{ item.imageURL }}"
+    >
+      <view slot="price-top">
+        食堂名称
+      </view>
+    </van-card>
+  </navigator>
 </view>
 
 
