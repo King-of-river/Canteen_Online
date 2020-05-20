@@ -31,5 +31,5 @@
   },
   "sitemapLocation": "sitemap.json",
   "style": "v2",
-  "usingComponents": {}
+  "usingComponents": { }
 }
