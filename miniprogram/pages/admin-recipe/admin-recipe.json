@@ -1,7 +1,0 @@
-{
-  "usingComponents": {
-      "van-skeleton": "../../dist/skeleton/index",
-      "van-card": "../../dist/card/index",
-      "van-button": "../../dist/button/index"
-  }
-}

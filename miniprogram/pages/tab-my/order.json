@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "点餐",
+  "usingComponents": {
+
+    "van-search": "../../dist/search/index",
+    "van-divider": "../../dist/divider/index",
+    "van-card": "../../dist/card/index",
+    "van-button": "../../dist/button/index"
+    
+  }
+}
