@@ -8,19 +8,19 @@
 </van-cell-group>
 
 <van-dialog id="van-dialog" />
-<van-button  
+<van-button
   custom-style="z-index:5;position:fixed;bottom:0;left:0;width:30%"
-  type="danger" 
+  type="danger"
   size="nomall"
   bindtap="btnDel"
 >
   删除
 </van-button>
- 
+
 <van-dialog id="van-dialog" />
-<van-button  
+<van-button
   custom-style="z-index:5;position:fixed;bottom:0;right:0;width:70%"
-  type="primary" 
+  type="primary"
   size="nomall"
   bindtap="btnAOM"
 >
