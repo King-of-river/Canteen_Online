@@ -90,6 +90,12 @@
 					"pathName": "pages/tab-my/my",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "orders",
+					"pathName": "pages/tab-orders/orders",
+					"scene": null
 				}
 			]
 		}
