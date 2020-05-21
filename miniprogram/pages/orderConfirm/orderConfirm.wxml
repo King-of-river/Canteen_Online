@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <van-image  width="320"  height="250"   fit="fill" src="cloud://test-iqvto.7465-test-iqvto-1302018735/my-image.jpg" />
 <van-cell-group class="cell-group">
   <van-cell title="菜品名称" value="套餐1" />
@@ -24,3 +25,31 @@
   button-text="提交订单"
   bind:submit="onSubmit"
 />
+=======
+<van-image  width="320"  height="250"   fit="fill" src="cloud://test-iqvto.7465-test-iqvto-1302018735/my-image.jpg" />
+<van-cell-group class="cell-group">
+  <van-cell title="菜品名称" value="套餐1" />
+  <van-cell title="菜品介绍"  label="描述信息" border="{{ false }}" />
+  <!-- 时间选择 -->
+  <van-cell title="预定送达时间" is-link bind:click="showPopup" />
+  <van-popup show="{{ show }}"  custom-style="width: 100%" bind:close="onClose">
+    <van-datetime-picker
+      type="time"
+      value="{{ currentDate }}"
+      min-hour="{{ minHour }}"
+      max-hour="{{ maxHour }}"
+      bind:input="onInput"
+    />
+  </van-popup>
+  <!-- 地址选择 -->
+  <van-cell title="地址选择"  label="描述信息" border="{{ false }}" />
+</van-cell-group>
+
+<van-dialog id="van-dialog" />
+<van-toast id="van-toast" />
+<van-submit-bar
+  price="{{ 1950 }}"
+  button-text="提交订单"
+  bind:submit="onSubmit"
+/>
+>>>>>>> develop

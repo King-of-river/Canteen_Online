@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "usingComponents": {
     "van-image": "../../dist/image/index",
@@ -5,4 +6,13 @@
     "van-button": "../../dist/button/index",
     "van-dialog": "../../dist/dialog/index"
   }
+=======
+{
+  "usingComponents": {
+    "van-image": "../../dist/image/index",
+    "van-field": "../../dist/field/index",
+    "van-button": "../../dist/button/index",
+    "van-dialog": "../../dist/dialog/index"
+  }
+>>>>>>> develop
 }
