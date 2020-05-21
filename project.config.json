@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 {
 	"miniprogramRoot": "miniprogram/",
 	"cloudfunctionRoot": "cloudfunctions/",
@@ -86,93 +86,5 @@
 			]
 		}
 	}
-=======
-{
-	"miniprogramRoot": "miniprogram/",
-	"cloudfunctionRoot": "cloudfunctions/",
-	"setting": {
-		"urlCheck": true,
-		"es6": true,
-		"enhance": true,
-		"postcss": true,
-		"minified": true,
-		"newFeature": true,
-		"coverView": true,
-		"nodeModules": true,
-		"autoAudits": false,
-		"showShadowRootInWxmlPanel": true,
-		"scopeDataCheck": false,
-		"checkInvalidKey": true,
-		"checkSiteMap": true,
-		"uploadWithSourceMap": true,
-		"babelSetting": {
-			"ignore": [],
-			"disablePlugins": [],
-			"outputPath": ""
-		}
-	},
-	"appid": "wxc5ca4d76a8637639",
-	"projectname": "%E4%BA%91%E4%B8%8A%E9%A3%9F%E5%A0%82",
-	"libVersion": "2.11.0",
-	"simulatorType": "wechat",
-	"simulatorPluginLibVersion": {},
-	"condition": {
-		"search": {
-			"current": -1,
-			"list": []
-		},
-		"conversation": {
-			"current": -1,
-			"list": []
-		},
-		"plugin": {
-			"current": -1,
-			"list": []
-		},
-		"game": {
-			"list": []
-		},
-		"gamePlugin": {
-			"current": -1,
-			"list": []
-		},
-		"miniprogram": {
-			"current": 0,
-			"list": [
-				{
-					"id": -1,
-					"name": "db guide",
-					"pathName": "pages/databaseGuide/databaseGuide",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "pages/tab-order/order",
-					"pathName": "pages/tab-order/order",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/orderConfirm/orderConfirm",
-					"pathName": "pages/orderConfirm/orderConfirm",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/admin-recipe/admin-recipe",
-					"pathName": "pages/admin-recipe/admin-recipe",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/recipe-modify/recipe-modify",
-					"pathName": "pages/recipe-modify/recipe-modify",
-					"scene": null
-				}
-			]
-		}
-	}
->>>>>>> develop
+
 }
