@@ -3,14 +3,14 @@
   value="{{ value }}" 
   shape="round"
   label="{{canteen}}"
-  use-left-icon-slot="false" 
+  use-left-icon-slot="false"
   right-icon="search"
   placeholder="请输入搜索关键词" 
   bind:search="onSearch"
 >
 </van-search>
 <!-- 商品栏 -->
-<view wx:key="this" wx:for="{{goods}}"> 
+<view wx:key="this" wx:for="{{goods}}">
   <navigator url="../orderConfirm/orderConfirm?id={{item._id}}&name={{item.name}}">
     <van-card
       price="{{ item.price }}"
