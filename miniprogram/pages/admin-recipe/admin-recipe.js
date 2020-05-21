@@ -29,7 +29,7 @@ Page({
 
   addMenu(e){
     wx.navigateTo({
-      url: '../recipe-modify/recipe-modify',//此处传参用以区别是添加还是修改
+      url: '../recipe-modify/recipe-modify？choice=add',//此处传参用以区别是添加还是修改
     })
   }
 })
