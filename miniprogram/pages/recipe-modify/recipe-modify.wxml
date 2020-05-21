@@ -1,0 +1,28 @@
+<van-image width="320" height="250" fit="fill" src="cloud://test-iqvto.7465-test-iqvto-1302018735/my-image.jpg" />
+<van-cell-group class="cell-group">
+  <van-field value="传参的菜品_id，新增默认为空自动生成（不可修改）" label="菜品_id" disabled />
+  <van-field value="菜品所属窗口（不可修改）" label="菜品窗口" disabled />
+  <van-field required value="菜品名" label="菜品名*" placeholder="请输入菜品名" />
+  <van-field type="textarea"  autosize value="{{dec}}" label="介绍" placeholder="请输入菜品介绍" />
+  <van-field right-icon="gold-coin-o" required value="19.9" label="售价" placeholder="请输入售价" />
+</van-cell-group>
+
+<van-dialog id="van-dialog" />
+<van-button  
+  custom-style="z-index:5;position:fixed;bottom:0;left:0;width:30%"
+  type="danger" 
+  size="nomall"
+  bindtap="btnDel"
+>
+  删除
+</van-button>
+
+<van-dialog id="van-dialog" />
+<van-button  
+  custom-style="z-index:5;position:fixed;bottom:0;right:0;width:70%"
+  type="primary" 
+  size="nomall"
+  bindtap="btnAOM"
+>
+  确认添加/修改
+</van-button>
