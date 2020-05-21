@@ -2,8 +2,8 @@ const app = getApp()
 
 Page({
   data: {
-    value:"",        //当前输入的值，van-search的value字段。
-    canteen:"全部",  //搜索框左侧文本，van-search的label字段。
+    value:"",
+    canteen:"全部",
     goods:[
       {
         price:"10",
