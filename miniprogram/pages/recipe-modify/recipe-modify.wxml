@@ -16,7 +16,7 @@
 >
   删除
 </van-button>
-
+ 
 <van-dialog id="van-dialog" />
 <van-button  
   custom-style="z-index:5;position:fixed;bottom:0;right:0;width:70%"
