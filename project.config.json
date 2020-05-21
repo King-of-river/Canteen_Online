@@ -1,4 +1,3 @@
-
 {
 	"miniprogramRoot": "miniprogram/",
 	"cloudfunctionRoot": "cloudfunctions/",
@@ -58,33 +57,41 @@
 					"query": ""
 				},
 				{
-					"id": -1,
-					"name": "pages/tab-order/order",
+					"id": 1,
+					"name": "order",
 					"pathName": "pages/tab-order/order",
 					"query": "",
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "pages/orderConfirm/orderConfirm",
+					"id": 2,
+					"name": "orderConfirm",
 					"pathName": "pages/orderConfirm/orderConfirm",
 					"query": "",
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "pages/admin-recipe/admin-recipe",
+					"id": 3,
+					"name": "admin-recipe",
 					"pathName": "pages/admin-recipe/admin-recipe",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "recipe-modify",
+					"pathName": "pages/recipe-modify/recipe-modify",
+					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "pages/recipe-modify/recipe-modify",
-					"pathName": "pages/recipe-modify/recipe-modify",
+					"name": "my",
+					"pathName": "pages/tab-my/my",
+					"query": "",
 					"scene": null
 				}
 			]
 		}
 	}
-
 }

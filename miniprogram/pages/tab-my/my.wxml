@@ -1,4 +1,36 @@
-
 <!--pages/tab-my/my.wxml-->
-<text>pages/tab-my/my.wxml</text>
+<van-cell 
+  use-label-slot="true"
+>
+ <view 
+   slot="title" 
+   class="nickname"
+  >
+ {{nickname}}
+  </view>
 
+  <view
+    slot="label"
+    class="status"
+  >
+  {{status}}
+  </view>
+
+  <van-icon 
+    slot="icon" 
+    size="60px" 
+    name="cloud://test-iqvto.7465-test-iqvto-1302018735/my-image.jpg"
+  />
+</van-cell>
+
+<van-cell-group title=" ">
+  <van-cell title="学校认证" value="内容" />
+  <van-cell title="寝室信息" value="内容" />
+  <van-cell title="用户权限" value="内容" />
+</van-cell-group>
+
+<van-cell-group title=" ">
+  <van-cell title="隐私政策" value="内容" />
+  <van-cell title="问题反馈" value="内容" />
+  <van-cell title="关于我们" value="内容" />
+</van-cell-group> 
