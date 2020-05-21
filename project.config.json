@@ -48,34 +48,38 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 0,
 			"list": [
 				{
-					"id": 0,
+					"id": -1,
 					"name": "db guide",
 					"pathName": "pages/databaseGuide/databaseGuide",
-					"query": "",
-					"scene": null
+					"query": ""
 				},
 				{
-					"id": 1,
-					"name": "order",
+					"id": -1,
+					"name": "pages/tab-order/order",
 					"pathName": "pages/tab-order/order",
 					"query": "",
 					"scene": null
 				},
 				{
-					"id": 2,
-					"name": "orderConfirm",
+					"id": -1,
+					"name": "pages/orderConfirm/orderConfirm",
 					"pathName": "pages/orderConfirm/orderConfirm",
 					"query": "",
 					"scene": null
 				},
 				{
-					"id": 3,
-					"name": "orders",
-					"pathName": "pages/tab-orders/orders",
-					"query": "",
+					"id": -1,
+					"name": "pages/admin-recipe/admin-recipe",
+					"pathName": "pages/admin-recipe/admin-recipe",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/recipe-modify/recipe-modify",
+					"pathName": "pages/recipe-modify/recipe-modify",
 					"scene": null
 				}
 			]

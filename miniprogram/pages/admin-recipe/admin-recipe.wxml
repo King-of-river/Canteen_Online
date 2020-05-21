@@ -1,0 +1,24 @@
+<van-skeleton title avatar row="1" >
+  <view>
+  </view>
+</van-skeleton>
+<view wx:key="this" wx:for="{{goods}}">
+  <navigator url="../recipe-modify/recipe-modify">
+    <van-card
+      price="{{ item.price }}"
+      desc="{{ item.desc }}"
+      title="{{ item.name }}"
+      thumb="{{ item.imageURL }}"
+    >
+      <view slot="price-top"> {{item.canteen}} </view>
+    </van-card>
+  </navigator>
+</view>
+<van-button  
+  custom-style='z-index:10;position:fixed;width:100%;bottom:0' 
+  type="primary" 
+  size="nomall"
+  bindtap="addMenu"
+  >
+  添加菜品
+</van-button>
