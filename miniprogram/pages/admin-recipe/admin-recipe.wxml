@@ -7,15 +7,15 @@
     <van-swipe-cell right-width="65">
       <navigator url="../recipe-modify/recipe-modify?_id={{item._id}}">
         <van-card price="{{ item.meal_price }}" desc="{{ item.meal_info }}" title="{{ item.meal_name }}" thumb="{{ item.meal_img }}">
-          <view slot="price-top"> 绐楀彛锛歿{item.meal_window}} </view>
+          <view slot="price-top"> 窗口：{item.meal_window}} </view>
         </van-card>
       </navigator>
-      <view slot="right" class="van-swipe-cell__right">鍒犻櫎</view>
+      <view slot="right" class="van-swipe-cell__right">删除</view>
     </van-swipe-cell>
   </view>
 </view>
 
 <van-button custom-style='z-index:10;position:fixed;width:100%;bottom:0' type="primary" size="nomall" bindtap="addMenu">
-  娣诲姞鑿滃搧
+  添加
 
 </van-button>
