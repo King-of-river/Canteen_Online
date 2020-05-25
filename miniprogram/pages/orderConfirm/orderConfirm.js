@@ -1,3 +1,4 @@
+
 import Dialog from '../../dist/dialog/dialog';
 import Toast from '../../dist/toast/toast';
 Page({
@@ -26,4 +27,5 @@ Page({
         // on cancel
       });
   }
+
 })

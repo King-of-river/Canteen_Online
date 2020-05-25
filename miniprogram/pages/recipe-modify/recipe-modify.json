@@ -1,3 +1,4 @@
+
 {
   "navigationBarTitleText": "菜品修改/添加",
   "usingComponents": {
@@ -6,4 +7,5 @@
     "van-button": "../../dist/button/index",
     "van-dialog": "../../dist/dialog/index"
   }
+
 }

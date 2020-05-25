@@ -1,3 +1,4 @@
+
 import Dialog from '../../dist/dialog/dialog';
 const db = wx.cloud.database();
 const Menu = db.collection('Menu');

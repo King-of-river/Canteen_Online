@@ -1,3 +1,7 @@
+
 {
-  "usingComponents": {}
+  "navigationBarTitleText": "订单",
+  "usingComponents": {
+    "van-card": "../../dist/card/index"
+  }
 }
