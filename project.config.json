@@ -27,6 +27,7 @@
 	"libVersion": "2.11.0",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
+	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
 	"condition": {
 		"search": {
 			"current": -1,
@@ -79,22 +80,9 @@
 				},
 				{
 					"id": 4,
-					"name": "recipe-modify",
+					"name": "pages/recipe-modify/recipe-modify",
 					"pathName": "pages/recipe-modify/recipe-modify",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "my",
-					"pathName": "pages/tab-my/my",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "orders",
-					"pathName": "pages/tab-orders/orders",
+					"query": "_id=0bdd6b5e5ec897150016f34d4d8be74f",
 					"scene": null
 				}
 			]
