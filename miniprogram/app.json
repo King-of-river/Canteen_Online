@@ -26,11 +26,13 @@
     "pages/tab-my/my",
     "pages/orderConfirm/orderConfirm",
     "pages/admin-recipe/admin-recipe",
-    "pages/a-recipe-modify/a-recipe-modify",
-    "pages/admin/admin",
-    "pages/a-order-assis/a-order-assis",
-    "pages/a-order-detail/a-order-detail",
-    "pages/a-statistics/a-statistics"
+    "pages/recipe-modify/recipe-modify",
+    "pages/manage/manage",
+    "pages/m-order-assis/m-order-assis",
+    "pages/m-order-detail/m-order-detail",
+    "pages/m-recipe/m-recipe",
+    "pages/m-recipe-detail/m-recipe-detail",
+    "pages/m-statistics/m-statistics"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
