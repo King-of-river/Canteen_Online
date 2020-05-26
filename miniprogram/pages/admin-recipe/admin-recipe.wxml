@@ -8,7 +8,7 @@
     <van-swipe-cell right-width="65">
       <navigator url="../recipe-modify/recipe-modify?_id={{item._id}}">
         <van-card price="{{ item.meal_price }}" desc="{{ item.meal_info }}" title="{{ item.meal_name }}" thumb="{{ item.meal_img }}">
-          <view slot="price-top"> 窗口：{item.meal_window}} </view>
+          <view slot="price-top"> 窗口：{item.meal_window} </view>
         </van-card>
       </navigator>
       <view slot="right" class="van-swipe-cell__right">删除</view>
