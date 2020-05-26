@@ -21,7 +21,7 @@ Component({
 				//为了方便王江月调试，暂时在这里放置一个入口
         icon: 'manager-o',
         text: '管理',
-        url: '/pages/manage/manage'
+        url: '/pages/admin/admin'
       }
 		]
 	},
