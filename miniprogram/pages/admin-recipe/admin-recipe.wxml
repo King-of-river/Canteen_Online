@@ -22,7 +22,7 @@
   bindtap="addMenu"
   >
   添加菜品
-
+</van-button>
 <van-button custom-style='z-index:10;position:fixed;width:100%;bottom:0' type="primary" size="nomall" bindtap="addMenu">
   添加
 
