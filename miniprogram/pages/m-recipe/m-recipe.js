@@ -1,4 +1,4 @@
-// pages/admin/admin.js
+// pages/m-recipe/m-recipe.js
 Page({
 
   /**

@@ -1,4 +1,4 @@
-// pages/a-recipe/a-recipe.js
+// pages/order_detail/order_detail.js
 Page({
 
   /**
