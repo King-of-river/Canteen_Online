@@ -23,7 +23,9 @@
     "pages/tab-my/my",
     "pages/orderConfirm/orderConfirm",
     "pages/admin-recipe/admin-recipe",
-    "pages/recipe-modify/recipe-modify"
+    "pages/recipe-modify/recipe-modify",
+    "pages/admin/admin",
+    "pages/a-statistics/a-statistics"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
