@@ -20,7 +20,7 @@ Component({
       {
         icon: 'manager-o',
         text: '管理',
-        url: '/pages/admin/admin'
+        url: '/pages/manage/manage'
       }
 		]
 	},
