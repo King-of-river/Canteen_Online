@@ -16,7 +16,7 @@
         "pagePath": "pages/tab-my/my"
       },
       {
-        "pagePath": "pages/manage/manage"
+        "pagePath": "pages/admin/admin"
       }
     ]
   },
