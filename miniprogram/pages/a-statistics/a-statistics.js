@@ -1,4 +1,4 @@
-// pages/statistics/statistics.js
+// pages/a-statistics/a-statistics.js
 Page({
 
   /**
