@@ -84,6 +84,12 @@
 					"pathName": "pages/recipe-modify/recipe-modify",
 					"query": "_id=0bdd6b5e5ec897150016f34d4d8be74f",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "admin",
+					"pathName": "pages/admin/admin",
+					"scene": null
 				}
 			]
 		}
