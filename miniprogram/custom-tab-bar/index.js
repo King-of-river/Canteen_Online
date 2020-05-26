@@ -11,16 +11,11 @@ Component({
 				icon: 'orders-o',
 				text: '订单',
         url: '/pages/tab-orders/orders'
-      }, 
+			},
       {
         icon: 'manager-o',
         text: '我的',
         url: '/pages/tab-my/my'
-      },
-      {
-        icon: 'manager-o',
-        text: '管理',
-        url: '/pages/manage/manage'
       }
 		]
 	},
