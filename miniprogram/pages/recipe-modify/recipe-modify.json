@@ -1,5 +1,6 @@
 
 {
+  "navigationBarTitleText": "菜品修改/添加",
   "usingComponents": {
     "van-image": "../../dist/image/index",
     "van-field": "../../dist/field/index",

@@ -17,7 +17,7 @@
 
 
 <view wx:key="this" wx:for="{{to_recipe}}">
-  <navigator url="../m-recipe/m-recipe">
+  <navigator url=" ">
     <van-card 
       title="{{ item.name }}"
       desc="{{ item.desc }}"
@@ -27,7 +27,7 @@
 </view>
 
 <view wx:key="this" wx:for="{{to_order_assis}}">
-  <navigator url="../m-order-assis/m-order-assis">
+  <navigator url="">
     <van-card
       title="{{ item.name }}"
       desc="{{ item.desc }}"
@@ -37,7 +37,7 @@
 </view>
 
 <view wx:key="this" wx:for="{{to_statistics}}">
-  <navigator url="../m-statistics/m-statistics">
+  <navigator url=" ">
     <van-card
       title="{{ item.name }}"
       desc="{{ item.desc }}"

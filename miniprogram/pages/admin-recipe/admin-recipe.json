@@ -1,7 +1,9 @@
 {
+  "navigationBarTitleText": "食谱管理",
   "usingComponents": {
       "van-skeleton": "../../dist/skeleton/index",
       "van-card": "../../dist/card/index",
-      "van-button": "../../dist/button/index"
+      "van-button": "../../dist/button/index",
+      "van-swipe-cell": "../../dist/swipe-cell/index"
   }
 }
