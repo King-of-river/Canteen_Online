@@ -1,22 +1,35 @@
-const db = wx.cloud.database()
 Page({
   data: {
     value: "",
     canteen: "全部",
-    goods:{}
+    goods: [
+      {
+        price: "10",
+        desc: "套餐描述",
+        name: "套餐名称",
+        canteen:"食堂",
+        imageURL: "cloud://test-iqvto.7465-test-iqvto-1302018735/my-image.jpg",
+      },
+      {
+        price: "10",
+        desc: "套餐描述",
+        name: "套餐名称",
+        canteen: "食堂",
+        imageURL: "cloud://test-iqvto.7465-test-iqvto-1302018735/my-image.jpg",
+      },
+      {
+        price: "10",
+        desc: "套餐描述",
+        name: "套餐名称",
+        canteen: "食堂",
+        imageURL: "cloud://test-iqvto.7465-test-iqvto-1302018735/my-image.jpg",
+      }
+    ],
   },
 
-  onShow: function() {
-    db.collection("Menu").get().then(res =>{
-      this.setData({
-        goods:res.data
-      })
-    })
-  },
-
-  addMenu(e) {
+  addMenu(e){
     wx.navigateTo({
-      url: "../recipe-modify/recipe-modify?_id="+null, //此处传参用以区别是添加还是修改
+      url: '../recipe-modify/recipe-modify',//此处传参用以区别是添加还是修改
     })
   }
 

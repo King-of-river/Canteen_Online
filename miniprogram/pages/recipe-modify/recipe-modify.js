@@ -1,70 +1,45 @@
 
 import Dialog from '../../dist/dialog/dialog';
-const db = wx.cloud.database();
-const Menu = db.collection('Menu');
-const _ = db.command;
 Page({
   data: {
-    good: {},
-    _id: null
+    dec:"菜品介绍菜品介绍菜品介绍菜品介绍菜品介绍菜品介绍菜品介绍菜品介绍菜品介绍菜品介绍菜品介绍菜品介绍菜品介绍菜品介绍菜品介绍菜品介绍菜品介绍菜品介绍菜品介绍菜品介绍菜品介绍菜品介绍菜品介绍菜品介绍菜品介绍菜品介绍菜品介绍菜品介绍菜品介绍"
   },
-  //页面加载
-  onLoad: function(options) {
-    this.setData({
-      _id: (options._id == 'null' ? null : options._id)
+  //删除事件
+  btnDel(e){
+    Dialog.confirm({
+      title: '提示',
+      message: '确认删除该菜品？',
     })
-    if (options._id != 'null') {
-      Menu.doc(options._id).get().then(res => {
-        // console.log(res)
-        this.setData({
-          good: res.data
-        })
+      .then(() => {
+        //数据库删除操作
+        wx.navigateBack({})
+          .then(() => {
+            wx.showToast({
+              title: '删除成功',
+              icon: "success"
+            })
+          })
       })
-    }
+      .catch(() => {
+        // on cancel
+      });
   },
 
-  //表单提交
-  onSubmit: function(event) {
+  //确认添加/修改事件
+  btnAOM(e){
     Dialog.confirm({
-        title: '提示',
-        message: '确认添加或修改菜品信息？',
-      })
+      title: '提示',
+      message: '确认添加或修改菜品信息？',
+    })
       .then(() => {
-        //数据更新
-        if (this.data._id != null) {
-          wx.cloud.callFunction({
-            name: 'db_menu_command',
-            data: {
-              command:"update",
-              data:event.detail.value
-            },
-            success: function(res) {
-              console.log(res)
-            },
-            fail: console.error
+        //数据库添加或修改操作
+        wx.navigateBack({})
+          .then(()=>{
+            wx.showToast({
+              title: '修改成功',
+              icon: "success"
+            })
           })
-        }
-        //数据添加
-        if (this.data._id == null) {
-          wx.cloud.callFunction({
-            name: 'db_menu_command',
-            data: {
-              command:"add",
-              data: event.detail.value
-            },
-            success: function(res) {
-              console.log(res)
-            },
-            fail: console.error
-          })
-        }
-        //退回上一界面
-        wx.navigateBack({}).then(() => {
-          wx.showToast({
-            title: '修改成功',
-            icon: "success"
-          })
-        })
       })
       .catch(() => {
         // on cancel
