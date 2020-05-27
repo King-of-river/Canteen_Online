@@ -37,7 +37,7 @@ exports.main = async(event, context) => {
     }
     //删除数据
     if(event.command == "del"){
-      
+      return await db.collection('Menu').doc(event.data._id).remove()
     }
   } catch (e) {
     console.error(e)
