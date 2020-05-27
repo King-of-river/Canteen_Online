@@ -1,4 +1,3 @@
-
 import Dialog from '../../dist/dialog/dialog';
 const db = wx.cloud.database();
 const Menu = db.collection('Menu');
@@ -8,6 +7,7 @@ Page({
     good: {},
     _id: null
   },
+
   //页面加载
   onLoad: function(options) {
     this.setData({
@@ -25,6 +25,15 @@ Page({
 
   //表单提交
   onSubmit: function(event) {
+    
+    console.log(event)
+    if (!event.detail.value.meal_name || !event.detail.value.meal_price){
+      wx.showToast({
+        title: '请填入必要信息',
+        icon:"loading"
+      })
+      return;
+    }
     Dialog.confirm({
         title: '提示',
         message: '确认添加或修改菜品信息？',
@@ -35,8 +44,8 @@ Page({
           wx.cloud.callFunction({
             name: 'db_menu_command',
             data: {
-              command:"update",
-              data:event.detail.value
+              command: "update",
+              data: event.detail.value
             },
             success: function(res) {
               console.log(res)
@@ -49,7 +58,7 @@ Page({
           wx.cloud.callFunction({
             name: 'db_menu_command',
             data: {
-              command:"add",
+              command: "add",
               data: event.detail.value
             },
             success: function(res) {
