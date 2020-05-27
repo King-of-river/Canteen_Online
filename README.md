@@ -2,7 +2,7 @@
 
 ## 进入点餐页面（Tab-order页面）
 
-- 载入时：【云函数】获取用户信息。存在本地缓存，留待使用 [**学生数据表的构建**](https://github.com/BEATING-HEART/Canteen_Online/wiki/%E5%AD%A6%E7%94%9F%E6%95%B0%E6%8D%AE%E8%A1%A8%E6%9E%84%E5%BB%BA)
+- 载入时：【云函数】获取用户信息。存在本地缓存，留待使用 [**用户数据表的构建**](https://github.com/BEATING-HEART/Canteen_Online/wiki/%E7%94%A8%E6%88%B7%E6%95%B0%E6%8D%AE%E8%A1%A8%E6%9E%84%E5%BB%BA)
 
    1. 读取寝室信息失败，那么跳转到信息认证页面。
    2. 读取寝室信息成功，按照寝室信息，就近读取食堂，显示于搜索框左侧，项目初期暂不开放选择食堂的功能。
