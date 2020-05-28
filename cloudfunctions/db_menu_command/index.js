@@ -13,7 +13,7 @@ exports.main = async(event, context) => {
     if (event.command == "add") {
       return await db.collection('Menu').add({
         data: {
-          meal_img: "cloud://test-iqvto.7465-test-iqvto-1302018735/my-image.jpg",
+          meal_img: event.data.meal_img,
           meal_info: event.data.meal_info,
           meal_name: event.data.meal_name,
           meal_price: event.data.meal_price,
@@ -26,7 +26,7 @@ exports.main = async(event, context) => {
     if (event.command == "update") {
       return await db.collection('Menu').doc(event.data._id).update({
         data: {
-          meal_img: "cloud://test-iqvto.7465-test-iqvto-1302018735/my-image.jpg",
+          meal_img: event.data.meal_img,
           meal_info: event.data.meal_info,
           meal_name: event.data.meal_name,
           meal_price: event.data.meal_price,
