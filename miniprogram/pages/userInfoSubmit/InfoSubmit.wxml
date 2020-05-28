@@ -38,3 +38,7 @@
     bind:change="onChange"
   />
 </van-cell-group>
+
+<van-button custom-style='z-index:10;position:fixed;width:100%;bottom:0' type="primary" size="nomall" bindtap="">
+  提交认证
+</van-button>
