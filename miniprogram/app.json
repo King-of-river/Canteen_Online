@@ -18,15 +18,18 @@
   },
   "pages": [
     "pages/tab-order/order",
-    "pages/tab-orders/orders",
-    "pages/tab-my/my",
     "pages/orderConfirm/orderConfirm",
-    "pages/admin-recipe/admin-recipe",
-    "pages/recipe-modify/recipe-modify",
+
+    "pages/tab-orders/orders",
+
+    "pages/tab-my/my",
+    "pages/userInfoSubmit/InfoSubmit",
 
     "pages/admin/admin",
-    "pages/a-statistics/a-statistics",
-    "pages/test/test"
+    "pages/admin-recipe/admin-recipe",
+    "pages/recipe-modify/recipe-modify",
+    "pages/a-statistics/a-statistics"
+
 
   ],
   "window": {

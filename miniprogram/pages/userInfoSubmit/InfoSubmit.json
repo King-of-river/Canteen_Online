@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "用户信息认证",
+
+  "usingComponents": {
+    "van-cell": "../../dist/cell/index",
+    "van-cell-group": "../../dist/cell-group/index",
+    "van-icon":"../../dist/icon/index",
+    "van-pupup":"../../dist/popup/index",
+    "van-field": "../../dist/field/index"
+  }
+}

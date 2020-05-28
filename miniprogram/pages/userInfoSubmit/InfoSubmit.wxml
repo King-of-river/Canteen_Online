@@ -1,0 +1,40 @@
+<!--pages/userInfoSubmit/InfoSubmit.wxml-->
+
+<van-cell-group title="学校信息">
+  <van-cell center="true" bind:click="showPopup">
+    <text slot="title" class="school" >上海理工大学</text>
+    <van-icon slot="icon" size="30px" name="cloud://test-iqvto.7465-test-iqvto-1302018735/my-image.jpg" />
+  </van-cell>
+</van-cell-group>
+
+<van-cell-group title="学生信息">
+  <van-field
+    value="{{ value_number }}"
+    label="学工号"
+    placeholder="请输入学工号"
+    border="{{ false }}"
+    input-align="right"
+    bind:change="onChange"
+  />
+  <van-field
+    value="{{ value_name }}"
+    label="姓名"
+    placeholder="请输入姓名"
+    border="{{ false }}"
+    input-align="right"
+    bind:change="onChange"
+  />
+</van-cell-group>
+
+<!--宿舍信息：宿舍楼采用弹出层选择-->
+<van-cell-group title="宿舍信息" >
+  <van-cell title="宿舍楼" value="{{ dorm }}"/>
+  <van-field
+    value="{{ value_room }}"
+    label="房间号"
+    placeholder="请输入房间号"
+    border="{{ false }}"
+    input-align="right"
+    bind:change="onChange"
+  />
+</van-cell-group>
