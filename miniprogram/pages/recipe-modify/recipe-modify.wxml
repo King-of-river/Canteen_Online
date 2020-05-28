@@ -1,4 +1,4 @@
-<van-image width="100%" height="250" fit="fill" src="{{good.meal_img}}" />
+<van-image bindtap="selectImage" width="100%" height="250" fit="fill" src="{{good.meal_img}}" />
 <form class="form" bindsubmit="onSubmit">
   <van-field name="_id" value="{{good._id}}" label="菜品_id" placeholder="将自动生成" disabled />
   <van-field name="meal_window" value="{{good.meal_window}}" label="菜品窗口" placeholder="将自动生成" disabled />
