@@ -17,7 +17,7 @@
 
 
 <view wx:key="this" wx:for="{{to_recipe}}">
-  <navigator url=" ">
+  <navigator url="../admin-recipe/admin-recipe">
     <van-card 
       title="{{ item.name }}"
       desc="{{ item.desc }}"
@@ -37,7 +37,7 @@
 </view>
 
 <view wx:key="this" wx:for="{{to_statistics}}">
-  <navigator url=" ">
+  <navigator url="../a-statistics/a-statistics">
     <van-card
       title="{{ item.name }}"
       desc="{{ item.desc }}"
