@@ -4,24 +4,24 @@ const Menu = db.collection('Menu');
 const _ = db.command;
 Page({
   data: {
-    meal_img:"",
     good: {},
     _id: null
   },
+  //选择图片
   selectImage: function() {
-    var that = this;
+    var pagethis = this;
     wx.chooseImage({
       success: function(res) {
-        console.log(res)
+        //console.log(res)
         wx.cloud.uploadFile({
           cloudPath: `${Math.floor(Math.random()*10000000)}.png`,
           filePath: res.tempFilePaths[0]
         }).then(res => {
           //console.log("选择的图片：" + res.fileID)
-          that.setData({
+          pagethis.setData({
             'good.meal_img': res.fileID
           })
-          //console.log(that.data)
+          //console.log(pagethis.data)
         }).catch(err => {
           console.error(err)
         })
@@ -46,7 +46,7 @@ Page({
 
   //表单提交
   onSubmit: function(event) {
-    console.log(event)
+    //console.log(event)
     if (!event.detail.value.meal_name || !event.detail.value.meal_price) {
       wx.showToast({
         title: '请填入必要信息',
@@ -60,17 +60,19 @@ Page({
       })
       .then(() => {
         this.setData({
-          good:event.detail.value,
-          'good.meal_img':this.data.meal_img
+          'good.meal_img': this.data.good.meal_img,
+          'good.meal_name': event.detail.value.meal_name,
+          'good.meal_info': event.detail.value.meal_info,
+          'good.meal_price': event.detail.value.meal_price  
         })
-        console.log(this.data.good)
+        //console.log(this.data.good)
         //数据更新
         if (this.data._id != null) {
           wx.cloud.callFunction({
             name: 'db_menu_command',
             data: {
               command: "update",
-              data: good
+              data: this.data.good
             },
             success: function(res) {
               console.log(res)
@@ -84,7 +86,7 @@ Page({
             name: 'db_menu_command',
             data: {
               command: "add",
-              data: event.detail.value
+              data: this.data.good
             },
             success: function(res) {
               console.log(res)
@@ -92,6 +94,7 @@ Page({
             fail: console.error
           })
         }
+
         //退回上一界面
         wx.navigateBack({}).then(() => {
           wx.showToast({
