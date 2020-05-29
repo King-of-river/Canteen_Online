@@ -1,33 +1,17 @@
-
-<van-skeleton title avatar row="1" >
-  <view>
-  </view>
-</van-skeleton>
-
 <van-notice-bar wx:key="this" wx:for="{{notice1}}"
   scrollable="false"
-  text="所在食堂***窗口***"
+  text="管理员所在食堂和窗口"
+  backgroundColor="#ffffff"
+  color="#000000"
 />
-
 
 <van-notice-bar wx:key="this" wx:for="{{notice2}}"
   scrollable="true"
   text="实时收到午餐***笔/晚餐***笔，请及时备餐"
 />
 
-
-<view wx:key="this" wx:for="{{to_recipe}}">
-  <navigator url=" ">
-    <van-card 
-      title="{{ item.name }}"
-      desc="{{ item.desc }}"
-    >
-    </van-card>
-  </navigator>
-</view>
-
 <view wx:key="this" wx:for="{{to_order_assis}}">
-  <navigator url="">
+  <navigator url="../a-order-assis/a-order-assis">
     <van-card
       title="{{ item.name }}"
       desc="{{ item.desc }}"
@@ -37,7 +21,7 @@
 </view>
 
 <view wx:key="this" wx:for="{{to_statistics}}">
-  <navigator url=" ">
+  <navigator url="../a-statistics/a-statistics">
     <van-card
       title="{{ item.name }}"
       desc="{{ item.desc }}"

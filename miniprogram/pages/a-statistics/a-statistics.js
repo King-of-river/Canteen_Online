@@ -4,9 +4,14 @@ Page({
     value: "",
     canteen: "全部",
     notice: [ {} ],
-    situation: [
+    situation1: [
       {
-        situation: "所在食堂***、窗口***",
+        situation: "历史数据对比",
+      },
+    ],
+    situation2: [
+      {
+        situation: "餐品销量排行",
       },
     ],
     row: [{
