@@ -10,8 +10,6 @@
   text="实时收到午餐***笔/晚餐***笔，请及时备餐"
 />
 
-<<<<<<< HEAD
-=======
 
 <view wx:key="this" wx:for="{{to_recipe}}">
   <navigator url="../admin-recipe/admin-recipe">
@@ -23,7 +21,7 @@
   </navigator>
 </view>
 
->>>>>>> develop
+
 <view wx:key="this" wx:for="{{to_order_assis}}">
   <navigator url="../a-order-assis/a-order-assis">
     <van-card
