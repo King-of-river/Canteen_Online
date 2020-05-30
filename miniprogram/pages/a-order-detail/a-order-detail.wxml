@@ -1,0 +1,7 @@
+
+<van-notice-bar wx:key="this" wx:for="{{notice}}"
+  scrollable="false"
+  text="第一批次出餐表（***日期）"
+  backgroundColor="#ffffff"
+  color="#000000"
+/>
