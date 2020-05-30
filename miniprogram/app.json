@@ -28,7 +28,7 @@
     "pages/admin/admin",
     "pages/admin-recipe/admin-recipe",
     "pages/recipe-modify/recipe-modify",
-    
+
     "pages/a-statistics/a-statistics",
     "pages/a-order-assis/a-order-assis",
     "pages/a-order-detail/a-order-detail"
@@ -42,9 +42,7 @@
     "navigationBarTitleText": "云开发 QuickStart",
     "navigationBarTextStyle": "black"
   },
-
   "sitemapLocation": "sitemap.json",
   "style": "v2",
   "usingComponents": {}
-
 }
