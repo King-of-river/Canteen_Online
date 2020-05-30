@@ -1,0 +1,6 @@
+/* pages/userInfoSubmit/InfoSubmit.wxss */
+
+.school{
+  margin-left: 15px;
+  font-size: 15px;
+}

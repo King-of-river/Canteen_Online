@@ -6,6 +6,7 @@
 		"es6": true,
 		"enhance": true,
 		"postcss": true,
+		"preloadBackgroundData": false,
 		"minified": true,
 		"newFeature": true,
 		"coverView": true,
@@ -20,7 +21,9 @@
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
-		}
+		},
+		"useCompilerModule": false,
+		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"appid": "wxc5ca4d76a8637639",
 	"projectname": "%E4%BA%91%E4%B8%8A%E9%A3%9F%E5%A0%82",
@@ -58,22 +61,22 @@
 					"query": ""
 				},
 				{
-					"id": 1,
-					"name": "order",
+					"id": -1,
+					"name": "pages/tab-order/order",
 					"pathName": "pages/tab-order/order",
 					"query": "",
 					"scene": null
 				},
 				{
-					"id": 2,
-					"name": "orderConfirm",
+					"id": -1,
+					"name": "pages/orderConfirm/orderConfirm",
 					"pathName": "pages/orderConfirm/orderConfirm",
 					"query": "",
 					"scene": null
 				},
 				{
-					"id": 3,
-					"name": "admin-recipe",
+					"id": -1,
+					"name": "pages/admin-recipe/admin-recipe",
 					"pathName": "pages/admin-recipe/admin-recipe",
 					"query": "",
 					"scene": null
@@ -87,8 +90,22 @@
 				},
 				{
 					"id": -1,
-					"name": "admin",
-					"pathName": "pages/admin/admin",
+					"name": "pages/tab-my/my",
+					"pathName": "pages/tab-my/my",
+					"query": "_id=0bdd6b5e5ec897150016f34d4d8be74f",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/test/test",
+					"pathName": "pages/test/test",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "用户信息认证",
+					"pathName": "pages/userInfoSubmit/InfoSubmit",
 					"scene": null
 				}
 			]
