@@ -17,26 +17,8 @@ exports.main = (event, context) => {
   // 获取 WX Context (微信调用上下文)，包括OPENID、APP ID、及 UNIONID（需满足 UNIONID 获取条件）等信息
   const wxContext = cloud.getWXContext()
 
-  // 自定义逻辑
-  try{
-    db.collection('').where({           //补充集合名
-      openid : wxContext.OPENID
-    })
-    .get({
-      success: function(res) {
-      //如果有找到对应信息，那么返回给调用处
-      }
-      //如果没找到调用信息，那么返回失败
-    })
-  }catch(e){
-    console.error(e)
-  }
   return {
-    event,
-    openid: wxContext.OPENID,
-    //appid: wxContext.APPID,
-    //unionid: wxContext.UNIONID,
-    //env: wxContext.ENV,
+    openid: wxContext.OPENID
   }
 }
 
