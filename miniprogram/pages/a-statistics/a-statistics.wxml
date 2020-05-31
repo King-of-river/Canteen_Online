@@ -1,24 +1,28 @@
+<van-notice-bar wx:key="this" wx:for="{{notice}}"
+  scrollable="false"
+  text="管理员所在食堂和窗口"
+  backgroundColor="#ffffff"
+  color="#000000"
+/>
 
-<van-skeleton title avatar row="1" >
-  <view>
-  </view>
-</van-skeleton>
+<van-row wx:key="this" wx:for="{{row}}">
+  <van-col span="8" style='white-space:pre;'>***               ***               ***               ***</van-col>
+</van-row>
 
-<view wx:key="this" wx:for="{{situation}}">
+<van-row wx:key="this" wx:for="{{row}}">
+  <van-col span="8" style='white-space:pre;font-size: 12px;'>实时午餐订单  午餐订单金额  实时完成订单  晚餐订单金额</van-col>
+</van-row>
+
+<view wx:key="this" wx:for="{{situation1}}">
     <van-card 
       title="{{ item.situation }}"
     >
     </van-card>
 </view>
 
-<van-row wx:key="this" wx:for="{{row}}">
-  <van-col span="8">***实时午餐订单</van-col>
-  <van-col span="8">***实时午餐订单</van-col>
-  <van-col span="8">***实时午餐订单</van-col>
-  <van-col span="8">***实时午餐订单</van-col>
-</van-row>
-
-<van-notice-bar wx:key="this" wx:for="{{notice}}"
-  scrollable="true"
-  text="足协杯战线连续第2年上演广州德比战，上赛季半决赛上恒大以两回合5-3的总比分淘汰富力。"
-/>
+<view wx:key="this" wx:for="{{situation2}}">
+    <van-card 
+      title="{{ item.situation }}"
+    >
+    </van-card>
+</view>

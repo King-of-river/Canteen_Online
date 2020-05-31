@@ -1,14 +1,9 @@
-
-<van-skeleton title avatar row="1" >
-  <view>
-  </view>
-</van-skeleton>
-
 <van-notice-bar wx:key="this" wx:for="{{notice1}}"
   scrollable="false"
-  text="所在食堂***窗口***"
+  text="管理员所在食堂和窗口"
+  backgroundColor="#ffffff"
+  color="#000000"
 />
-
 
 <van-notice-bar wx:key="this" wx:for="{{notice2}}"
   scrollable="true"
@@ -26,8 +21,9 @@
   </navigator>
 </view>
 
+
 <view wx:key="this" wx:for="{{to_order_assis}}">
-  <navigator url="">
+  <navigator url="../a-order-assis/a-order-assis">
     <van-card
       title="{{ item.name }}"
       desc="{{ item.desc }}"
