@@ -56,6 +56,12 @@
 			"list": [
 				{
 					"id": -1,
+					"name": "db guide",
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": -1,
 					"name": "pages/tab-order/order",
 					"pathName": "pages/tab-order/order",
 					"query": "",
@@ -91,15 +97,15 @@
 				},
 				{
 					"id": -1,
-					"name": "pages/a-statistics/a-statistics",
-					"pathName": "pages/a-statistics/a-statistics",
-					"query": "_id=0bdd6b5e5ec897150016f34d4d8be74f",
+					"name": "用户信息认证",
+					"pathName": "pages/userInfoSubmit/InfoSubmit",
+					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "pages/userInfoSubmit/InfoSubmit",
-					"pathName": "pages/userInfoSubmit/InfoSubmit",
+					"name": "pages/authorization/authorization",
+					"pathName": "pages/authorization/authorization",
 					"query": "",
 					"scene": null
 				}

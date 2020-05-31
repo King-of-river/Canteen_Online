@@ -1,20 +1,12 @@
-<!--pages/tab-my/my.wxml-->
 <van-cell use-label-slot="true">
-  <view slot="title" class="nickname">
-    {{nickname}}
-  </view>
-
-  <view slot="label" class="status">
-    {{status}}
-  </view>
-
-  <van-icon slot="icon" size="60px" name="cloud://test-iqvto.7465-test-iqvto-1302018735/my-image.jpg" />
+  <van-image round width="50" height="50" src="{{user_info.avatarUrl}}" />
+  <view>{{user_info.nickName}}</view>
 </van-cell>
 
 <van-cell-group title=" ">
-  <van-cell title="学校认证" value="内容"  url="../userInfoSubmit/InfoSubmit" />
+  <van-cell title="学校认证" value="内容" url="../userInfoSubmit/InfoSubmit" />
   <van-cell title="寝室信息" value="内容" />
-  <van-cell title="管理员权限" value="内容" url="../admin/admin"/>
+  <van-cell title="管理员权限" value="内容" url="../admin/admin" />
 </van-cell-group>
 
 <van-cell-group title=" ">
