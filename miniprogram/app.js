@@ -5,7 +5,9 @@ App({
     userOpenID: "",
     userNickname: "",
     userAvatarUrl: "",
-    userDepartment: ""
+    userDepartment: "",
+    userName: "",
+    userNumber: ""
   },
 
   onLaunch: function () {
@@ -13,28 +15,51 @@ App({
       console.error('请使用 2.2.3 或以上的基础库以使用云能力')
     } else {
       wx.cloud.init({
-        // env 参数说明：
-        //   env 参数决定接下来小程序发起的云开发调用（wx.cloud.xxx）会默认请求到哪个云环境的资源
-        //   此处请填入环境 ID, 环境 ID 可打开云控制台查看
-        //   如不填则使用默认环境（第一个创建的环境）
-        // env: 'my-env-id',
         traceUser: true,
         env: 'test-iqvto',
       })
     }
-    this.getLoginStatus();
+    this.enterMainPage(this.isAlreadyLogin());
   },
 
-  getLoginStatus () {
-    let that = this;
-    wx.cloud.callFunction({
-      name:'login',
-      complete: res => {
-        var openid = res.result.openId
-        that.globalData.userOpenID = openid
-      }
-    })
-    console.log('openid:',userOpenID)
+  isAlreadyLogin() {
+    try {
+      //从缓存中获取用户信息
+      var alreadyLogin = wx.getStorageSync('user_info');
+     if (alreadyLogin) {
+        
+        //设置globalData（这里写）
+        return true;
+     }
+
+     //如果缓存没有了，要从数据库中搜寻（调用云函数）
+     wx.cloud.callFunction({
+      name: 'login',
+      success: function(res){
+        //从云函数获取用户信息。（云函数内写）
+        //设置globalData（这里写）
+      },
+      fail: console.error
+     })
+
+     //实在无法获取用户信息，那么进入认证页面。
+     //从认证页面，填写用户信息，上传数据库，然后存入缓存（认证页面写）
+     return false;
+    } catch (e) {
+      //排除错误
     }
+  },
+
+  enterMainPage(flag) {
+    if (flag) {
+      wx.redirectTo({
+        url: 'pages/userInfoSubmit/InfoSubmit',
+      })
+    } else {
+      wx.switchTab({
+        url: 'pages/tab-order/order',
+      })
+    }
+  }
 
 })
