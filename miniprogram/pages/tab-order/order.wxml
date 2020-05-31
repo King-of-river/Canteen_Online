@@ -1,28 +1,32 @@
-<van-search 
-  class="search"
-  value="{{ value }}" 
-  shape="round"
-  label="{{canteen}}"
-  use-left-icon-slot="false"
-  right-icon="search"
-  placeholder="请输入搜索关键词" 
-  bind:search="onSearch"
->
-</van-search>
-<!-- 商品栏 -->
-<view wx:key="this" wx:for="{{goods}}">
-  <navigator url="../orderConfirm/orderConfirm?id={{item._id}}&name={{item.name}}">
-    <van-card
-      price="{{ item.price }}"
-      desc="{{ item.desc }}"
-      title="{{ item.name }}"
-      thumb="{{ item.imageURL }}"
-    >
-      <view slot="price-top">
-        食堂名称
-      </view>
-    </van-card>
-  </navigator>
+<view wx:if="{{isHide}}">
+  <view wx:if="{{canIUse}}">
+    <view class='header'>
+      <image src='/images/wx_login.png'></image>
+    </view>
+
+    <view class='content'>
+      <view>申请获取以下权限</view>
+      <text>获得你的公开信息(昵称，头像等)</text>
+    </view>
+
+    <button class='bottom' type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">
+      授权登录
+    </button>
+  </view>
+  <view wx:else>请升级微信版本</view>
 </view>
 
-
+<view wx:else>
+  <van-search class="search" value="{{ value }}" shape="round" label="{{canteen}}" use-left-icon-slot="false" right-icon="search" placeholder="请输入搜索关键词" bind:search="onSearch">
+  </van-search>
+  <!-- 商品栏 -->
+  <view wx:key="this" wx:for="{{goods}}">
+    <navigator url="../orderConfirm/orderConfirm?id={{item._id}}&name={{item.name}}">
+      <van-card price="{{ item.price }}" desc="{{ item.desc }}" title="{{ item.name }}" thumb="{{ item.imageURL }}">
+        <view slot="price-top">
+          食堂名称
+        </view>
+      </van-card>
+    </navigator>
+  </view>
+</view>
