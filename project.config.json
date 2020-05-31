@@ -101,6 +101,15 @@
 					"name": "pages/userInfoSubmit/InfoSubmit",
 					"pathName": "pages/userInfoSubmit/InfoSubmit",
 					"query": "",
+<<<<<<< Updated upstream
+=======
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/a-statistics/a-statistics",
+					"pathName": "pages/a-statistics/a-statistics",
+>>>>>>> Stashed changes
 					"scene": null
 				}
 			]
