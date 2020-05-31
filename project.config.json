@@ -52,14 +52,8 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": -1,
 			"list": [
-				{
-					"id": -1,
-					"name": "db guide",
-					"pathName": "pages/databaseGuide/databaseGuide",
-					"query": ""
-				},
 				{
 					"id": -1,
 					"name": "pages/tab-order/order",
@@ -97,15 +91,16 @@
 				},
 				{
 					"id": -1,
-					"name": "pages/test/test",
-					"pathName": "pages/test/test",
-					"query": "",
+					"name": "pages/a-statistics/a-statistics",
+					"pathName": "pages/a-statistics/a-statistics",
+					"query": "_id=0bdd6b5e5ec897150016f34d4d8be74f",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "用户信息认证",
+					"name": "pages/userInfoSubmit/InfoSubmit",
 					"pathName": "pages/userInfoSubmit/InfoSubmit",
+					"query": "",
 					"scene": null
 				}
 			]
