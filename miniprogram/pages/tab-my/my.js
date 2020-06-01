@@ -1,4 +1,3 @@
-const app = getApp()
 Page({
   data: {
     user_info: {
@@ -31,8 +30,10 @@ Page({
         pagethis.setData({
           'user_info.openId': res.result.openId,
         })
+        getApp().globalData.openId = res.result.openId
         //console.log(pagethis.data.user_info)
       }
     })
   },
+
 })

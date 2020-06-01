@@ -1,6 +1,7 @@
 //app.js
 App({
   globalData: {
+    openId:'',
   },
 
   onLaunch: function () {

@@ -1,3 +1,6 @@
+.order{
+  margin-bottom: 100px;
+}
 .search {
   border-bottom-style: solid;
   border-bottom-color: #353535;

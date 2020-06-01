@@ -8,17 +8,26 @@ Page({
 
     value: "",
     canteen: "全部",
-    goods: [{
-      price: "10",
-      desc: "套餐描述",
-      name: "套餐名称",
-      imageURL: "cloud://test-iqvto.7465-test-iqvto-1302018735/my-image.jpg",
-    }]
-
+    goods:[]
   },
 
   onShow() {
-    this.getTabBar().init();
+    this.getTabBar().init(); //初始化底部导航栏
+    wx.cloud.callFunction({
+      name: 'db_menu_command',
+      data: {
+        command: "get",
+        data: {
+
+        }
+      }
+    }).then(res => {
+      this.setData({
+        goods: res.result.data,
+      })
+      //console.log(this.data.goods)
+    })
+
   },
 
   onLoad: function() {
@@ -29,6 +38,7 @@ Page({
         if (res.authSetting['scope.userInfo']) {
           wx.getUserInfo({
             success: function(res) {
+              //that.getTabBar().init();//初始化底部导航栏
               // 用户已经授权过,不需要显示授权页面,所以不需要改变 isHide 的值
               // 根据自己的需求有其他操作再补充
               // 我这里实现的是在用户授权成功后，调用微信的 wx.login 接口，从而获取code
@@ -49,8 +59,8 @@ Page({
       //用户按了允许授权按钮
       var that = this;
       // 获取到用户的信息了，打印到控制台上看下
-      console.log("用户的信息如下：");
-      console.log(e.detail.userInfo);
+      //console.log("用户的信息如下：");
+      //console.log(e.detail.userInfo);
       //授权成功后,通过改变 isHide 的值，让实现页面显示出来，把授权页面隐藏起来
       that.setData({
         isHide: false
