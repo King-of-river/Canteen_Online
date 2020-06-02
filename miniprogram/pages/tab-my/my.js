@@ -26,12 +26,10 @@ Page({
     wx.cloud.callFunction({
       name: 'getOpenid',
       success: function(res) {
-        //console.log(res)
         pagethis.setData({
           'user_info.openId': res.result.openId,
         })
-        getApp().globalData.openId = res.result.openId
-        //console.log(pagethis.data.user_info)
+        getApp().globalData.user_info.openId = res.result.openId
       }
     })
   },
