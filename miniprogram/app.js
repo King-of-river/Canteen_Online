@@ -1,10 +1,17 @@
 //app.js
 App({
   globalData: {
-    openId:'',
+    user_info: {
+      is_admin: true,
+      name: '',
+      openId: '',
+      phone_num: '',
+      site: '',
+      sw_num: ''
+    }
   },
 
-  onLaunch: function () {
+  onLaunch: function() {
     if (!wx.cloud) {
       console.error('请使用 2.2.3 或以上的基础库以使用云能力')
     } else {
@@ -14,5 +21,5 @@ App({
       })
     }
   }
-  
+
 })

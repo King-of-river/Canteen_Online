@@ -1,30 +1,10 @@
-<view wx:if="{{isHide}}">
-  <view wx:if="{{canIUse}}">
-    <view class='header'>
-      <image src='/images/wx_login.png'></image>
-    </view>
-
-    <view class='content'>
-      <view>申请获取以下权限</view>
-      <text>获得你的公开信息(昵称，头像等)</text>
-    </view>
-
-    <button class='bottom' type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">
-      授权登录
-    </button>
-  </view>
-  <view wx:else>请升级微信版本</view>
-</view>
-
-<view class="order" wx:else>
-  <van-search class="search" value="{{ value }}" shape="round" label="{{canteen}}" use-left-icon-slot="false" right-icon="search" placeholder="请输入搜索关键词" bind:search="onSearch">
-  </van-search>
-  <!-- 商品栏 -->
-  <view wx:key="this" wx:for="{{goods}}">
-    <navigator url="../orderConfirm/orderConfirm?_id={{item._id}}">
-      <van-card price="{{ item.meal_price }}" desc="{{ item.meal_info }}" title="{{ item.meal_name }}" thumb="{{ item.meal_img }}">
-        <view slot="price-top">{{item.meal_window}}</view>
-      </van-card>
-    </navigator>
-  </view>
+<van-search class="search" value="{{ value }}" shape="round" label="{{canteen}}" use-left-icon-slot="false" right-icon="search" placeholder="请输入搜索关键词" bind:search="onSearch">
+</van-search>
+<!-- 商品栏 -->
+<view wx:key="this" wx:for="{{goods}}">
+  <navigator url="../orderConfirm/orderConfirm?_id={{item._id}}">
+    <van-card price="{{ item.meal_price }}" desc="{{ item.meal_info }}" title="{{ item.meal_name }}" thumb="{{ item.meal_img }}">
+      <view slot="price-top">{{item.meal_window}}</view>
+    </van-card>
+  </navigator>
 </view>
