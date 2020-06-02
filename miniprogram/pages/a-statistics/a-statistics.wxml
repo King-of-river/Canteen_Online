@@ -1,17 +1,24 @@
-<van-notice-bar wx:key="this" wx:for="{{notice}}"
+<van-notice-bar wx:key="this" wx:for="{{notice1}}"
   scrollable="false"
   text="管理员所在食堂和窗口"
   backgroundColor="#ffffff"
   color="#000000"
 />
 
-<van-row wx:key="this" wx:for="{{row}}">
-  <van-col span="8" style='white-space:pre;'>***               ***               ***               ***</van-col>
-</van-row>
+<van-notice-bar wx:key="this" wx:for="{{notice2}}"
+  scrollable="false"
+  text="以下为当日的实时数据"
+  backgroundColor="#ffffff"
+  color="#000000"
+/>
 
-<van-row wx:key="this" wx:for="{{row}}">
-  <van-col span="8" style='white-space:pre;font-size: 12px;'>实时午餐订单  午餐订单金额  实时完成订单  晚餐订单金额</van-col>
-</van-row>
+<van-grid gutter="{{ 10 }}"  border="{{ true }}">
+  <van-grid-item text="午餐订单\\n***"/>
+  <van-grid-item text="午餐金额\\n***" />
+  <van-grid-item text="晚餐订单\\n***" />
+  <van-grid-item text="晚餐金额\\n***" />
+</van-grid>
+
 
 <view wx:key="this" wx:for="{{situation1}}">
     <van-card 

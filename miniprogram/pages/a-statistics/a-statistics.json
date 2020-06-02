@@ -4,6 +4,8 @@
     "van-card": "../../dist/card/index",
     "van-button": "../../dist/button/index",
     "van-row": "../../dist/row/index",
-    "van-notice-bar": "../../dist/notice-bar/index"
+    "van-notice-bar": "../../dist/notice-bar/index",
+    "van-grid": "../../dist/grid/index",
+    "van-grid-item": "../../dist/grid-item/index"
   }
 }

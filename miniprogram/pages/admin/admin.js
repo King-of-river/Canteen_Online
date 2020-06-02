@@ -18,6 +18,16 @@ Page({
         desc: "查看窗口经营数据",
       }
     ],
+    click1(event) {
+      wx.navigateTo({
+        url: '../a-order-assis/a-order-assis',
+      })
+    },
+    tap2(event) {
+      wx.navigateTo({
+        url: '../admin-recipe/admin-recipe',
+      })
+    },
   },
   
 })
