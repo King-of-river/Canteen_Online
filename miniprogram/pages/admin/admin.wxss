@@ -1,0 +1,20 @@
+.admin-info {
+  font-size: 20px !important;
+}
+.grid {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.command-icon {
+  float: right;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 20px;
+}
+.desc {
+  font-size: 15px;
+}

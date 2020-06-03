@@ -1,7 +1,7 @@
-<van-skeleton title avatar row="1">
-  <view>
-  </view>
-</van-skeleton>
+<van-grid gutter="{{ 15 }}" column-num="1" custom-class="grid">
+  <van-grid-item text="管理员所在食堂窗口" text-class="admin-info"/>
+</van-grid>
+
 <van-dialog id="van-dialog" />
 <van-dialog id="van-dialog" />
 <view class="goods-list">

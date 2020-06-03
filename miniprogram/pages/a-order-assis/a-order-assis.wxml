@@ -1,9 +1,6 @@
-<van-notice-bar wx:key="this" wx:for="{{notice}}"
-  scrollable="false"
-  text="管理员所在食堂和窗口"
-  backgroundColor="#ffffff"
-  color="#000000"
-/>
+<van-grid gutter="{{ 15 }}" column-num="1" custom-class="grid">
+  <van-grid-item text="管理员所在食堂窗口" text-class="admin-info"/>
+</van-grid>
 
 <van-row wx:key="this" wx:for="{{row}}">
   <van-col span="30" style='white-space:pre;'>中餐订单                                        (刷新时间)</van-col>

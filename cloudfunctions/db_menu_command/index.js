@@ -39,6 +39,11 @@ exports.main = async(event, context) => {
     if(event.command == "del"){
       return await db.collection('Menu').doc(event.data._id).remove()
     }
+    //查询数据
+    if(event.command == "get"){
+      console.log('++++')
+      return await db.collection('Menu').get()
+    }
   } catch (e) {
     console.error(e)
   }

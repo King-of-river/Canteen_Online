@@ -29,10 +29,12 @@
     "pages/admin-recipe/admin-recipe",
     "pages/recipe-modify/recipe-modify",
 
+
     "pages/a-statistics/a-statistics",
     "pages/a-order-assis/a-order-assis",
-    "pages/a-order-detail/a-order-detail"
+    "pages/a-order-detail/a-order-detail",
 
+    "pages/authorization/authorization"
 
   ],
   "window": {
@@ -44,5 +46,12 @@
   },
   "sitemapLocation": "sitemap.json",
   "style": "v2",
-  "usingComponents": {}
+  "usingComponents": {
+    
+    "van-cell": "dist/cell/index",
+    "van-cell-group": "dist/cell-group/index",
+
+    "van-grid": "dist/grid/index",
+    "van-grid-item": "dist/grid-item/index"
+  }
 }

@@ -20,18 +20,20 @@ Page({
           command: "del",
           data: e.currentTarget.dataset
         },
-        success: function (res) {
+        success: function(res) {
           console.log(res)
         },
         fail: console.error
       })
     })
   },
-  
+
   //售卖状态更改
-  alter_status: function(e){
-    console.log(e)
-    console.log("售卖状态更改")
+  alter_status: function(e) {
+    wx.showToast({
+      title: '售卖状态更改',
+      icon:'none'
+    })
   },
 
   onShow: function() {
