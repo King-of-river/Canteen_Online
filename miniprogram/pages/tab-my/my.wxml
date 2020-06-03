@@ -1,7 +1,17 @@
-<van-cell use-label-slot="true">
-  <van-image round width="50" height="50" src="{{user_info.avatarUrl}}" />
-  <view>{{user_info.nickName}}</view>
-</van-cell>
+<!--
+  <van-cell use-label-slot="true">
+    <van-image round width="50" height="50" src="{{user_info.avatarUrl}}" />
+    <view>{{user_info.nickName}}</view>
+    </van-cell>
+-->
+<van-grid column-num="1" >
+  <van-grid-item use-slot>
+    <van-image round width="50" height="50" src="{{user_info.avatarUrl}}" />
+    <text>\n</text>
+    <view>{{user_info.nickName}}</view>
+  </van-grid-item>
+</van-grid>
+
 
 <van-cell-group title=" ">
   <van-cell title="学校认证" value="内容" url="../userInfoSubmit/InfoSubmit" />

@@ -46,5 +46,12 @@
   },
   "sitemapLocation": "sitemap.json",
   "style": "v2",
-  "usingComponents": {}
+  "usingComponents": {
+    
+    "van-cell": "dist/cell/index",
+    "van-cell-group": "dist/cell-group/index",
+
+    "van-grid": "dist/grid/index",
+    "van-grid-item": "dist/grid-item/index"
+  }
 }
